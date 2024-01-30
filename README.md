@@ -3,7 +3,9 @@
 # GAME PSEUDOCODE
 
 CALL getPlayerChoice
+SET playerSelection
 CALL getComputerChoice
+SET computerSelection
 CALL playGame
 
 # FUNCTIONS PSEUDOCODE
