@@ -10,11 +10,9 @@ function getComputerChoice () {
     return computerChoice;
 }
 
-playerSelection = getPlayerChoice();
-console.log(playerSelection);
+playerSelection = getPlayerChoice().toLowerCase();
 
 computerSelection = getComputerChoice();
-console.log(computerSelection);
 
 playGame(playerSelection, computerSelection);
 
