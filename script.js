@@ -10,4 +10,6 @@ function getComputerChoice () {
     return computerChoice;
 }
 
+playerSelection = getPlayerChoice();
 
+computerSelection = getComputerChoice();
