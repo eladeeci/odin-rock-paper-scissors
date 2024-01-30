@@ -1,6 +1,6 @@
 # odin-rock-paper-scissors
 
-# GAME PSEUDOCODE
+GAME PSEUDOCODE
 
 CALL getPlayerChoice
 SET playerSelection
@@ -8,14 +8,14 @@ CALL getComputerChoice
 SET computerSelection
 CALL playGame
 
-# FUNCTIONS PSEUDOCODE
+FUNCTIONS PSEUDOCODE
 
-# getPlayerChoice ()
+getPlayerChoice ()
 
 OBTAIN playerChoice
 SET playerSelection = playerChoice
 
-# playGame ()
+playGame ()
 
 READ playerSelection
 READ computerSelection
