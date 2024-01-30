@@ -20,36 +20,36 @@ playGame()
 READ playerSelection  
 READ computerSelection  
 CASE playerSelection OF  
-    rock:  
-        IF computerSelection = rock THEN  
-            PRINT "It's a tie! You both chose rock."  
-        ELSE IF computerSelection = paper THEN  
-            PRINT "You lose! Paper beats rock."  
-        ELSE IF computerSelection = scissors THEN  
-            PRINT "You win! Rock beats scissors."  
-        ELSE  
-            PRINT "Invalid input."  
-        ENDIF  
-    paper:  
-        IF computerSelection = rock THEN  
-            PRINT "You win! Paper beats rock."  
-        ELSE IF computerSelection = paper THEN  
-            PRINT "It's a tie! You both chose paper."  
-        ELSE IF computerSelection = scissors THEN  
-            PRINT "You lose! Scissors beat paper."  
-        ELSE  
-            PRINT "Invalid input."  
-        ENDIF  
-    scissors:  
-        IF computerSelection = rock THEN  
-            PRINT "You lose! Rock beats scissors."  
-        ELSE IF computerSelection = paper THEN  
-            PRINT "You win! Scissors beat paper."  
-        ELSE IF computerSelection = scissors THEN  
-            PRINT "It's a tie! You both chose scissors."  
-        ELSE  
-            PRINT "Invalid input."  
-        ENDIF  
-    default:  
-        PRINT "Invalid player input. Please only choose rock, paper, or scissors."  
+&emsp;rock:  
+&emsp;&emsp;IF computerSelection = rock THEN  
+&emsp;&emsp;&emsp;PRINT "It's a tie! You both chose rock."  
+&emsp;&emsp;ELSE IF computerSelection = paper THEN  
+&emsp;&emsp;&emsp;PRINT "You lose! Paper beats rock."  
+&emsp;&emsp;ELSE IF computerSelection = scissors THEN  
+&emsp;&emsp;&emsp;PRINT "You win! Rock beats scissors."  
+&emsp;&emsp;ELSE  
+&emsp;&emsp;&emsp;PRINT "Invalid input."  
+&emsp;&emsp;ENDIF  
+&emsp;paper:  
+&emsp;&emsp;IF computerSelection = rock THEN  
+&emsp;&emsp;&emsp;PRINT "You win! Paper beats rock."  
+&emsp;&emsp;ELSE IF computerSelection = paper THEN  
+&emsp;&emsp;&emsp;PRINT "It's a tie! You both chose paper."  
+&emsp;&emsp;ELSE IF computerSelection = scissors THEN  
+&emsp;&emsp;&emsp;PRINT "You lose! Scissors beat paper."  
+&emsp;&emsp;ELSE  
+&emsp;&emsp;&emsp;PRINT "Invalid input."  
+&emsp;&emsp;ENDIF  
+&emsp;scissors:  
+&emsp;&emsp;IF computerSelection = rock THEN  
+&emsp;&emsp;&emsp;PRINT "You lose! Rock beats scissors."  
+&emsp;&emsp;ELSE IF computerSelection = paper THEN  
+&emsp;&emsp;&emsp;PRINT "You win! Scissors beat paper."  
+&emsp;&emsp;ELSE IF computerSelection = scissors THEN  
+&emsp;&emsp;&emsp;PRINT "It's a tie! You both chose scissors."  
+&emsp;&emsp;ELSE  
+&emsp;&emsp;&emsp;PRINT "Invalid input."  
+&emsp;&emsp;ENDIF  
+&emsp;default:  
+&emsp;&emsp;PRINT "Invalid player input. Please only choose rock, paper, or scissors."  
 ENDCASE  
