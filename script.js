@@ -1,6 +1,15 @@
 const choice = ['rock', 'paper', 'scissors']
+let win = 0;
+let loss = 0;
+let tie = 0;
 
 playGame();
+console.log('Game over!')
+console.log(`Win: ${win}`);
+console.log(`Loss: ${loss}`);
+console.log(`Tie: ${tie}`);
+
+
 
 /* FUNCTIONS */
 
