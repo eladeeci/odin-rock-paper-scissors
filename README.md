@@ -1,17 +1,17 @@
 # odin-rock-paper-scissors
 
-GAME PSEUDOCODE
+**GAME PSEUDOCODE**
 
 CALL playGame  
 IF win > loss THEN  
-  RETURN finalResult = "You win!"  
+&ensp;RETURN finalResult = "You win!"  
 ELSE IF win < loss THEN  
-  RETURN finalResult = "You lose!"  
+&ensp;RETURN finalResult = "You lose!"  
 ELSE IF win === loss THEN  
-  RETURN finalResult = "It's a tie!"
+&ensp;RETURN finalResult = "It's a tie!"
 PRINT "Game over! finalResult"
 
-FUNCTIONS PSEUDOCODE
+**FUNCTIONS PSEUDOCODE**
 
 getPlayerChoice()  
 
@@ -23,47 +23,47 @@ playRound()
 CALL getPlayerChoice 
 CALL getComputerChoice
 CASE playerSelection OF  
-  rock:  
-    IF computerSelection = rock THEN  
-      PRINT "It's a tie! You both chose rock."  
-      RETURN tie  
-    ELSE IF computerSelection = paper THEN  
-      PRINT "You lose! Paper beats rock."  
-      RETURN playerLose  
-    ELSE IF computerSelection = scissors THEN  
-      PRINT "You win! Rock beats scissors."  
-      RETURN playerWin  
-    ELSE  
-      PRINT "Invalid input."  
-    ENDIF  
-  paper:  
-    IF computerSelection = rock THEN  
-      PRINT "You win! Paper beats rock."  
-      RETURN playerWin  
-    ELSE IF computerSelection = paper THEN  
-      PRINT "It's a tie! You both chose paper."  
-      RETURN tie  
-    ELSE IF computerSelection = scissors THEN  
-      PRINT "You lose! Scissors beat paper."  
-      RETURN playerLose  
-    ELSE  
-      PRINT "Invalid input."  
-    ENDIF  
-  scissors:  
-    IF computerSelection = rock THEN  
-      PRINT "You lose! Rock beats scissors."  
-      RETURN playerLose  
-    ELSE IF computerSelection = paper THEN  
-      PRINT "You win! Scissors beat paper."  
-      RETURN playerWin  
-    ELSE IF computerSelection = scissors THEN  
-      PRINT "It's a tie! You both chose scissors."  
-      RETURN tie  
-    ELSE  
-      PRINT "Invalid input."  
-    ENDIF  
-  default:  
-    PRINT "Invalid player input. Please only choose rock, paper, or scissors."  
+&ensp;rock:  
+&ensp;&ensp;IF computerSelection = rock THEN  
+&ensp;&ensp;&ensp;PRINT "It's a tie! You both chose rock."  
+&ensp;&ensp;&ensp;RETURN tie  
+&ensp;&ensp;ELSE IF computerSelection = paper THEN  
+&ensp;&ensp;&ensp;PRINT "You lose! Paper beats rock."  
+&ensp;&ensp;&ensp;RETURN playerLose  
+&ensp;&ensp;ELSE IF computerSelection = scissors THEN  
+&ensp;&ensp;&ensp;PRINT "You win! Rock beats scissors."  
+&ensp;&ensp;&ensp;RETURN playerWin  
+&ensp;&ensp;ELSE  
+&ensp;&ensp;&ensp;PRINT "Invalid input."  
+&ensp;&ensp;ENDIF  
+&ensp;paper:  
+&ensp;&ensp;IF computerSelection = rock THEN  
+&ensp;&ensp;&ensp;PRINT "You win! Paper beats rock."  
+&ensp;&ensp;&ensp;RETURN playerWin  
+&ensp;&ensp;ELSE IF computerSelection = paper THEN  
+&ensp;&ensp;&ensp;PRINT "It's a tie! You both chose paper."  
+&ensp;&ensp;&ensp;RETURN tie  
+&ensp;&ensp;ELSE IF computerSelection = scissors THEN  
+&ensp;&ensp;&ensp;PRINT "You lose! Scissors beat paper."  
+&ensp;&ensp;&ensp;RETURN playerLose  
+&ensp;&ensp;ELSE  
+&ensp;&ensp;&ensp;PRINT "Invalid input."  
+&ensp;&ensp;ENDIF  
+&ensp;scissors:  
+&ensp;&ensp;IF computerSelection = rock THEN  
+&ensp;&ensp;&ensp;PRINT "You lose! Rock beats scissors."  
+&ensp;&ensp;&ensp;RETURN playerLose  
+&ensp;&ensp;ELSE IF computerSelection = paper THEN  
+&ensp;&ensp;&ensp;PRINT "You win! Scissors beat paper."  
+&ensp;&ensp;&ensp;RETURN playerWin  
+&ensp;&ensp;ELSE IF computerSelection = scissors THEN  
+&ensp;&ensp;&ensp;PRINT "It's a tie! You both chose scissors."  
+&ensp;&ensp;&ensp;RETURN tie  
+&ensp;&ensp;ELSE  
+&ensp;&ensp;&ensp;PRINT "Invalid input."  
+&ensp;&ensp;ENDIF  
+&ensp;default:  
+&ensp;&ensp;PRINT "Invalid player input. Please only choose rock, paper, or scissors."  
 ENDCASE  
 
 playGame()
@@ -71,10 +71,10 @@ playGame()
 FOR roundCount <= 5  
 CALL playRound  
 IF roundResult = playerWin THEN  
-    INCREMENT wins  
+&ensp;INCREMENT wins  
 ELSE IF roundResult = playerLose THEN  
-    INCREMENT loses  
+&ensp;INCREMENT loses  
 ELSE  
-    INCREMENT ties  
+&ensp;INCREMENT ties  
 INCREMENT roundCount  
 ENDFOR  
