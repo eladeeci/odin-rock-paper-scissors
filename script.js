@@ -1,5 +1,15 @@
 const choice = ['rock', 'paper', 'scissors']
 
+playGame();
+
+/* FUNCTIONS */
+
+function playGame () {
+    playerSelection = getPlayerChoice().toLowerCase();
+    computerSelection = getComputerChoice();
+    playRound(playerSelection, computerSelection);
+}
+
 function getPlayerChoice () {
     playerChoice = prompt('Choose a hand to play: ','Rock, paper, or scissors.')
     return playerChoice;
@@ -9,12 +19,6 @@ function getComputerChoice () {
     computerChoice = choice[Math.floor((Math.random()*choice.length))];
     return computerChoice;
 }
-
-playerSelection = getPlayerChoice().toLowerCase();
-
-computerSelection = getComputerChoice();
-
-playRound(playerSelection, computerSelection);
 
 function playRound (playerSelection,computerSelection) {
 
