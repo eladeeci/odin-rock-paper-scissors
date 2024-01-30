@@ -15,7 +15,7 @@ getPlayerChoice()
 OBTAIN playerChoice  
 SET playerSelection = playerChoice  
 
-playGame()
+playRound()
 
 READ playerSelection  
 READ computerSelection  

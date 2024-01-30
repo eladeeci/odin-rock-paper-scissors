@@ -14,9 +14,9 @@ playerSelection = getPlayerChoice().toLowerCase();
 
 computerSelection = getComputerChoice();
 
-playGame(playerSelection, computerSelection);
+playRound(playerSelection, computerSelection);
 
-function playGame (playerSelection,computerSelection) {
+function playRound (playerSelection,computerSelection) {
 
     /* console.log(playerSelection); */
 
